@@ -7,8 +7,8 @@ namespace Sejlklub
        
         static void Main(string[] args)
         {
-           Bruger Medlem = new Administrator("John", "Formand", 10000);
-
+           Bruger Medlem1 = new Administrator("John", "Formand", 10000);
+            Bruger Medlem2 = new Medlem("Bob", 20209090);
         }
     }
 }

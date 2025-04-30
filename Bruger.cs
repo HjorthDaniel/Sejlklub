@@ -12,16 +12,15 @@ namespace Sejlklub
         static int nextID = 1;
         private int id;
         private string navn;
-        private string email;
-        private int telefonNr;
+
 
         //Konstruktør
-        public Bruger(string Navn, string email, int telefonNr)
+        public Bruger(string Navn)
         {
             this.id = nextID++;
             this.navn = Navn;
-            this.email = email;
-            this.telefonNr = telefonNr;
+
+
         }
 
         //Properties
@@ -40,20 +39,8 @@ namespace Sejlklub
             get { return this.navn; }
             set { this.navn = value; }
         }
-        //Get and set for EMAIL
-        public string Email
 
-        {
-            get { return email; }
-            set { email = value; }
-        }
 
-        //Get and set for TELEFONNR
-        public int TelefonNr
-        {
-            get { return telefonNr; }
-            set { telefonNr = value; }
-        }
         //Metoder
 
 

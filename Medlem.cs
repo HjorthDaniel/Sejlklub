@@ -12,9 +12,9 @@ namespace Sejlklub
         //Felter - instance fields(attributter)
         private string email;
         private int telefonNr;
-
+      
         //Konstruktør
-        public Medlem(string email, int telefonNr) : base(email, telefonNr) 
+        public Medlem(string email, int telefonNr) : base() 
         {
             this.email = email;
             this.telefonNr = telefonNr;

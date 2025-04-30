@@ -28,5 +28,30 @@ namespace Sejlklub
             get { return løn; }
             set { løn = value; }
         }
+
+        public void ÆndreBeskrivelse(Begivenhed begivenhed, string nyBeskrivelse)
+        {
+            begivenhed.Beskrivelse = nyBeskrivelse;
+        }
+
+        public void ÆndreNavn(Begivenhed begivenhed, string nytNavn)
+        {
+            begivenhed.Name = nytNavn;
+        }
+
+        public void ÆndreSted(Begivenhed begivenhed, string nytSted)
+        {
+            begivenhed.Sted = nytSted;
+        }
+
+        public void ÆndreDato(Begivenhed begivenhed, int nyDato)
+        {
+            begivenhed.Dato = nyDato;
+        }
+
+
+
+
+
     }
 }
