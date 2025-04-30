@@ -12,10 +12,13 @@ namespace Sejlklub
         private string titel;
         private double løn;
 
+
         public Administrator(string navn, string titel, double løn) : base(navn)
         {
             this.titel = titel;
             this.løn = løn;
+
+            
         }
         public string Titel
         {
@@ -49,9 +52,22 @@ namespace Sejlklub
             begivenhed.Dato = nyDato;
         }
 
+        public Begivenhed OpretBegivenhed(string Navn, string Beskrivelse, string Sted, int Dato)
+        {
+            return new Begivenhed(Navn, Beskrivelse, Sted, Dato);
+        }
 
+        public override string ToString()
+        {
+            return $"Administrator: {Navn}, {løn}, {titel} ";
+            
+          
+        }
 
-
+        public string ToString2()
+        {
+            return $"Administrator: {Navn}, {løn}, {titel} ";
+        }
 
     }
 }

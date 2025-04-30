@@ -15,9 +15,9 @@ namespace Sejlklub
         private int dato;
 
         //Konstruktør
-        public Begivenhed(string Name, string Beskrivelse, string Sted, int Dato)
+        public Begivenhed(string Navn, string Beskrivelse, string Sted, int Dato)
         {
-            this.navn = Name;
+            this.navn = Navn;
             this.beskrivelse = Beskrivelse;
             this.sted = Sted;
             this.dato = Dato;

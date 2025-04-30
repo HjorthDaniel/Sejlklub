@@ -14,7 +14,7 @@ namespace Sejlklub
         private int telefonNr;
       
         //Konstruktør
-        public Medlem(string email, int telefonNr) : base() 
+        public Medlem(string navn, string email, int telefonNr) : base(navn) 
         {
             this.email = email;
             this.telefonNr = telefonNr;
@@ -45,7 +45,12 @@ namespace Sejlklub
             return $"Email: {email}, Tlf: {telefonNr}";
         }
 
+        public override string ToString()
+        {
+            return $"Medlem: {Navn}, {telefonNr}, {email} ";
 
+
+        }
 
     }
 }

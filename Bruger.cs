@@ -43,6 +43,12 @@ namespace Sejlklub
 
         //Metoder
 
+        public override string ToString()
+        {
+            return $"{id} {navn}";
+
+        }
+
 
     }
 
