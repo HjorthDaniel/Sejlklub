@@ -14,7 +14,19 @@ namespace Sejlklub
 
         public Administrator(string navn, string titel, double løn) : base(navn)
         {
+            this.titel = titel;
+            this.løn = løn;
+        }
+        public string Titel
+        {
+            get { return titel; }
+            set { titel = value; }
+        }
 
+        public double Løn
+        {
+            get { return løn; }
+            set { løn = value; }
         }
     }
 }

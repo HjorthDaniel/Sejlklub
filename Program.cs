@@ -1,10 +1,14 @@
-﻿namespace Sejlklub
+﻿using System.Reflection.Metadata;
+
+namespace Sejlklub
 {
-    internal class Program
+    public class Program
     {
+       
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+           Bruger Medlem = new Administrator("John", "Formand", 10000);
+
         }
     }
 }

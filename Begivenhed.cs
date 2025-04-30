@@ -23,8 +23,8 @@ namespace Sejlklub
             this.dato = Dato;
 
         }
-        //Properties 
-        // get betyder hent 
+        //Properties
+        // get betyder hent
         // set betyder ændre værdien til noget andet (f.eks. brugerId)
         public string Name
         {
@@ -32,25 +32,25 @@ namespace Sejlklub
             set { this.navn = value; }
 
         }
-
+        //Get and set for BESKRIVELSE
         public string Beskrivelse
         {
             get { return this.beskrivelse; }
 
             set { this.beskrivelse = value; }
         }
-
+        //Get and set for STED
         public string Sted
         {
             get { return this.sted; }
             set { this.sted = value; }
         }
-
+        //Get and set for DATO
         public int Dato
         {
             get { return this.dato; }
             set { this.dato = value; }
         }
-        //Metode
+        //Metoder
     }
 }
