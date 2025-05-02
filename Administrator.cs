@@ -52,22 +52,24 @@ namespace Sejlklub
             begivenhed.Dato = nyDato;
         }
 
-        public Begivenhed OpretBegivenhed(string Navn, string Beskrivelse, string Sted, int Dato)
+        public static Begivenhed OpretBegivenhed(string Navn, string Beskrivelse, string Sted, int Dato, bool BegrænsetAntalPladser)
         {
-            return new Begivenhed(Navn, Beskrivelse, Sted, Dato);
+            return new Begivenhed(Navn, Beskrivelse, Sted, Dato,BegrænsetAntalPladser);
         }
 
         public override string ToString()
         {
             return $"Administrator: {Navn}, {løn}, {titel} ";
             
-          
         }
 
         public string ToString2()
         {
             return $"Administrator: {Navn}, {løn}, {titel} ";
         }
-
+        public static Udlejning UdlejBåde(int Pris, bool Tilgængelighed, string Navn, string Type, string Model, int Sejlnummer, double Mål, int ByggeÅr, int SidsteBundmalingsÅrstal)
+        {
+            return new Udlejning(Pris, Tilgængelighed, Navn, Type, Model, Sejlnummer, Mål, ByggeÅr, SidsteBundmalingsÅrstal);
+        }
     }
 }
