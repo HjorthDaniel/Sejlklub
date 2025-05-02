@@ -13,14 +13,16 @@ namespace Sejlklub
         private string beskrivelse;
         private string sted;
         private int dato;
+        private bool begrænsetAntalPladser;
 
         //Konstruktør
-        public Begivenhed(string Navn, string Beskrivelse, string Sted, int Dato)
+        public Begivenhed(string Navn, string Beskrivelse, string Sted, int Dato, bool BegrænsetAntalPladser)
         {
             this.navn = Navn;
             this.beskrivelse = Beskrivelse;
             this.sted = Sted;
             this.dato = Dato;
+            this.begrænsetAntalPladser = BegrænsetAntalPladser;
 
         }
         //Properties
@@ -51,6 +53,14 @@ namespace Sejlklub
             get { return this.dato; }
             set { this.dato = value; }
         }
-        //Metoder
+        //Get and set for BegrænsetAntalPladser
+        public bool BegrænsetAntalPladser
+        {
+            get { return this.begrænsetAntalPladser; }
+            set { this.begrænsetAntalPladser = value; }
+        }
     }
+    //Metoder
 }
+
+

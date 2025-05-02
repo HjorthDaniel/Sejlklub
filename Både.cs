@@ -14,22 +14,21 @@ namespace Sejlklub
         private string type;
         private string model;
         private int sejlnummer;
-        private string motoroplysning;
         private double mål;
         private int byggeår;
-        private string reperation;
+        private int sidsteBundmalingsÅrstal;
 
         //Konstruktør
-        public Både(string Navn, string Type, string Model, int Sejlnummer, string Motoroplysning, double Mål, int Byggeår, string Reperation)
+        public Både(string Navn, string Type, string Model, int Sejlnummer, double Mål,int ByggeÅr, int SidsteBundmalingsÅrstal)
         {
             this.navn = Navn;
             this.type = Type;
             this.model = Model;
             this.sejlnummer = Sejlnummer;
-            this.motoroplysning = Motoroplysning;
             this.mål = Mål;
-            this.byggeår = Byggeår;
-            this.reperation = Reperation;
+            this.byggeår = ByggeÅr;
+            this.sidsteBundmalingsÅrstal = SidsteBundmalingsÅrstal;
+           
         }
         //Properties
         // get betyder hent
@@ -41,17 +40,22 @@ namespace Sejlklub
             get { return this.navn; }
             set { this.navn = value; }
         }
-        //Get and set for TYPE
+        //Get for TYPE
         public string Type
         {
             get { return this.type; }
-            set { this.type = value; }
         }
-        //Get and set for SEJLNUMMER
+        //Get  for MODEL
+        public string Model
+        {
+            get { return model; }
+         
+        }
+        //Get  for SEJLNUMMER
         public int Sejlnummer
         {
             get { return this.sejlnummer; }
-            set { this.sejlnummer = value; }
+        
         }
         //Get and set for MÅL
         public double Mål
@@ -63,32 +67,13 @@ namespace Sejlklub
         public int Byggeår
         {
             get { return this.byggeår; }
-            set { this.byggeår = value; }
         }
-        //Get and set for REPERATION
-        public string Reperation
+
+        public int SidsteBundmalingsÅrstal
         {
-            get { return this.reperation; }
-            set { this.reperation = value; }
+            get { return this.sidsteBundmalingsÅrstal; }
+            set { this.sidsteBundmalingsÅrstal = value; }
         }
-        //Get and set for MODEL
-        public string Model
-        {
-            get { return model; }
-            set { model = value; }
-        }
-        //Get and set for MOTOROPLYSNING
-        public string Motoroplysning
-        {
-            get { return motoroplysning; }
-            set { motoroplysning = value; }
-        }
-
-
-
-
-
-
 
     }
 
